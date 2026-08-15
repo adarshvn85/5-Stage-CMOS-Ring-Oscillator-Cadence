@@ -1,8 +1,6 @@
 # 5-Stage-CMOS-Ring-Oscillator-Cadence
 Design and simulation of a 5-stage CMOS ring oscillator using Cadence Virtuoso, including schematic, transient analysis, frequency and propagation delay analysis.
 
-# 5-Stage Ring Oscillator (Cadence Virtuoso / Spectre, gpdk090)
-
 ## Overview
 
 This project implements and characterizes a **5-stage CMOS ring oscillator** designed and simulated in Cadence Virtuoso ADE using the **GPDK090 (90 nm)** process design kit. The circuit consists of five cascaded CMOS inverter stages connected in a feedback loop, with an additional variable load capacitor at each stage output to study the effect of load capacitance on oscillation frequency.
