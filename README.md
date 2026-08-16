@@ -18,8 +18,6 @@ This project implements and characterizes a **5-stage CMOS ring oscillator** des
 - **Number of stages:** 5 (odd number of inversions ⇒ ensures sustained oscillation, as required for a ring oscillator).
 - **Output node:** `out`, taken at the output of the fifth inverter stage.
 
-An odd number of inverting stages in a closed loop provides a net phase shift of 180°, plus loop gain greater than unity at DC, satisfying the Barkhausen criterion and producing self-sustained oscillation without any external clock or excitation.
-
 ## Simulation Setup
 
 - **Analysis type:** Transient (`tran`)
@@ -68,7 +66,7 @@ The output node `out` produces a clean, periodic square-like waveform swinging r
 
 ## Key Takeaways
 
-1. The 5-stage inverter ring, with an odd number of stages, successfully self-oscillates with no external excitation — validating the Barkhausen stability/oscillation criterion.
+1. The 5-stage inverter ring, with an odd number of stages, successfully self-oscillates with no external excitation.
 2. The base-case oscillation frequency at `c_var = 1 pF` is approximately **8.97 MHz**, giving a per-stage delay of about **11 ns**.
 3. Oscillation frequency is inversely related to per-stage load capacitance, making the ring oscillator's frequency tunable by varying `c_var` — a useful property for **voltage/capacitance-controlled oscillator (VCO/CCO)** applications, delay-line calibration, and process-monitoring test structures.
 4. As expected, the frequency-vs-capacitance curve is hyperbolic (`f ∝ 1/C`), with diminishing sensitivity at higher capacitance values.
